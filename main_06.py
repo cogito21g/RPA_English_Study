@@ -2,11 +2,9 @@ import os
 import shutil
 from gtts import gTTS
 from datetime import datetime
-from pydub import AudioSegment
 
 def parse_input(text):
     articles = {}
-    word_list = ""
     lines = text.strip().split("\n")
     current_topic_level = None
     current_title = None
@@ -23,22 +21,19 @@ def parse_input(text):
             continue
         elif line.startswith("```"):
             continue
-        elif line.startswith("| 단어 ") or line.startswith("| ---"):
-            continue
-        elif line.startswith("| "):
-            word_list += line + "\n"
         else:
             current_content.append(line)
     
     if current_topic_level and current_title:
         articles[(current_topic_level, current_title)] = "\n".join(current_content).strip()
     
-    return articles, word_list.strip()
+    return articles
 
-def save_articles(articles, word_list):
+def save_articles(articles):
     current_date = datetime.now().strftime("%Y-%m-%d")
     
     for idx, ((topic_level, title), text) in enumerate(articles.items(), start=1):
+        # Split topic and level correctly even if the topic contains ": "
         split_topic_level = topic_level.split(": ")
         if len(split_topic_level) == 3:
             category, topic, level = split_topic_level
@@ -51,11 +46,13 @@ def save_articles(articles, word_list):
         
         file_name = f"{level}_{title.replace(' ', '_').replace('-', '_')}"
         
+        # Save text file
         text_file_path = os.path.join(base_dir, f"{file_name}.txt")
         if not os.path.exists(text_file_path):
             with open(text_file_path, "w", encoding="utf-8") as file:
                 file.write(text.strip())
         
+        # Save audio file
         audio_file_path = os.path.join(base_dir, f"{file_name}.mp3")
         if not os.path.exists(audio_file_path):
             tts = gTTS(text=text.strip(), lang='en')
@@ -63,28 +60,7 @@ def save_articles(articles, word_list):
 
         print(f"Processed {idx}/{len(articles)}: {topic_level} - {title}")
 
-    if word_list:
-        word_list_path = os.path.join(base_dir, f"word_list_{topic.replace(' ', '_').replace('-', '_')}.txt")
-        if not os.path.exists(word_list_path):
-            with open(word_list_path, "w", encoding="utf-8") as file:
-                file.write(word_list)
-        
-        word_audio_path = os.path.join(base_dir, f"word_list_{topic.replace(' ', '_').replace('-', '_')}.mp3")
-        if not os.path.exists(word_audio_path):
-            word_lines = word_list.split("\n")
-            combined_audio = AudioSegment.silent(duration=1000)
-            for line in word_lines:
-                word = line.split("|")[1].strip()
-                tts = gTTS(text=word, lang='en')
-                temp_audio_path = "temp.mp3"
-                tts.save(temp_audio_path)
-                word_audio = AudioSegment.from_file(temp_audio_path)
-                combined_audio += word_audio + AudioSegment.silent(duration=1000)
-                os.remove(temp_audio_path)
-            
-            combined_audio.export(word_audio_path, format="mp3")
-        
-        print("Word list and audio have been successfully created.")
+    print("All files have been successfully created and saved.")
 
 def read_file(file_path):
     try:
@@ -147,5 +123,5 @@ if __name__ == "__main__":
             file_path = os.path.join("source", selected_file)
             user_input = read_file(file_path)
             if user_input:
-                articles, word_list = parse_input(user_input)
-                save_articles(articles, word_list)
+                articles = parse_input(user_input)
+                save_articles(articles)

@@ -67,3 +67,17 @@ In conclusion, while there are clear signs of recovery and growth in the global 
 
 - main_03.py
     - txt 파일을 읽어오도록 처리
+
+- main_04.py
+    - txt 파일명을 입력해서 처리
+
+- main_05.py
+    - source 폴더로 원본 텍스트 파일을 이동후 선택하도록 변경
+
+- main_06.py
+    - 여러개의 텍스트 파일을 ,(콤마)를 이용해서 동시에 선택할 수 있도록 변경
+
+- main_07.py
+    - 단어장 생성 추가, 단어는 1초 간격
+
+    
