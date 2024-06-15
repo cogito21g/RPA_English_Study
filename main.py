@@ -13,7 +13,10 @@ def save_articles(articles):
     os.makedirs(text_dir, exist_ok=True)
     os.makedirs(audio_dir, exist_ok=True)
 
-    for title, text in articles.items():
+    total_articles = len(articles)
+    print(f"Starting to process {total_articles} articles...")
+
+    for idx, (title, text) in enumerate(articles.items(), start=1):
         # Extract level and create appropriate file names
         level = title.split(" - ")[1]
         file_name = f"{level}_{title.replace(' ', '_').replace('-', '_')}"
@@ -27,8 +30,10 @@ def save_articles(articles):
         tts = gTTS(text=text.strip(), lang='en')
         audio_file_path = os.path.join(audio_dir, f"{file_name}.mp3")
         tts.save(audio_file_path)
-    
-    print("Files have been successfully created and saved.")
+
+        print(f"Processed {idx}/{total_articles}: {title}")
+
+    print("All files have been successfully created and saved.")
 
 # Example usage with the provided articles
 articles = {
