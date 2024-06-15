@@ -1,0 +1,78 @@
+2024-06-15 23:34:37.597536: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.txt
+2024-06-15 23:34:37.597653: Audio file already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.mp3
+2024-06-15 23:34:37.598051: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.txt
+2024-06-15 23:34:37.598117: Audio file already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.mp3
+2024-06-15 23:34:37.598340: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.txt
+2024-06-15 23:35:05.643538: Audio file created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.mp3
+2024-06-15 23:35:05.643747: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:35:05.644126: Word list file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.txt
+2024-06-15 23:35:11.491538: Word list audio created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.mp3
+2024-06-15 23:35:11.492042: Text file updated/created: output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.txt
+2024-06-15 23:35:21.002701: Audio file created: output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.mp3
+2024-06-15 23:35:21.003370: Text file updated/created: output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.txt
+2024-06-15 23:35:31.735507: Audio file created: output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.mp3
+2024-06-15 23:35:31.736660: Text file updated/created: output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.txt
+2024-06-15 23:35:53.859929: Audio file created: output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.mp3
+2024-06-15 23:35:53.860058: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:35:53.860302: Word list file updated/created: output/2024-06-15/소설_여행_경험/word_list_여행_경험.txt
+2024-06-15 23:35:59.171855: Word list audio created: output/2024-06-15/소설_여행_경험/word_list_여행_경험.mp3
+2024-06-15 23:35:59.172456: Text file updated/created: output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.txt
+2024-06-15 23:36:09.144082: Audio file created: output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.mp3
+2024-06-15 23:36:09.144754: Text file updated/created: output/2024-06-15/소설_행복/중급_The_Joyful_Journey.txt
+2024-06-15 23:36:26.848681: Audio file created: output/2024-06-15/소설_행복/중급_The_Joyful_Journey.mp3
+2024-06-15 23:36:26.849281: Text file updated/created: output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.txt
+2024-06-15 23:37:10.211055: Audio file created: output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.mp3
+2024-06-15 23:37:10.211288: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:37:10.211722: Word list file updated/created: output/2024-06-15/소설_행복/word_list_행복.txt
+2024-06-15 23:37:15.972911: Word list audio created: output/2024-06-15/소설_행복/word_list_행복.mp3
+2024-06-15 23:42:24.156784: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.txt
+2024-06-15 23:42:24.156943: Audio file already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.mp3
+2024-06-15 23:42:24.157498: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.txt
+2024-06-15 23:42:24.157575: Audio file already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.mp3
+2024-06-15 23:42:24.157929: Text file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.txt
+2024-06-15 23:42:24.158001: Audio file already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.mp3
+2024-06-15 23:42:24.158079: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:42:24.158232: Word list file updated/created: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.txt
+2024-06-15 23:42:24.158299: Word list audio already exists: output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.mp3
+2024-06-15 23:42:24.158626: Text file updated/created: output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.txt
+2024-06-15 23:42:24.158696: Audio file already exists: output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.mp3
+2024-06-15 23:42:24.158866: Text file updated/created: output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.txt
+2024-06-15 23:42:24.158937: Audio file already exists: output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.mp3
+2024-06-15 23:42:24.159116: Text file updated/created: output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.txt
+2024-06-15 23:42:24.159194: Audio file already exists: output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.mp3
+2024-06-15 23:42:24.159273: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:42:24.159435: Word list file updated/created: output/2024-06-15/소설_여행_경험/word_list_여행_경험.txt
+2024-06-15 23:42:24.159507: Word list audio already exists: output/2024-06-15/소설_여행_경험/word_list_여행_경험.mp3
+2024-06-15 23:42:24.159830: Text file updated/created: output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.txt
+2024-06-15 23:42:24.159896: Audio file already exists: output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.mp3
+2024-06-15 23:42:24.160042: Text file updated/created: output/2024-06-15/소설_행복/중급_The_Joyful_Journey.txt
+2024-06-15 23:42:24.160099: Audio file already exists: output/2024-06-15/소설_행복/중급_The_Joyful_Journey.mp3
+2024-06-15 23:42:24.160473: Text file updated/created: output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.txt
+2024-06-15 23:42:24.160705: Audio file already exists: output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.mp3
+2024-06-15 23:42:24.160950: Error: Unexpected format in topic_level: 단어장 (고급 지문 기준)
+2024-06-15 23:42:24.161194: Word list file updated/created: output/2024-06-15/소설_행복/word_list_행복.txt
+2024-06-15 23:42:24.161284: Word list audio already exists: output/2024-06-15/소설_행복/word_list_행복.mp3
+2024-06-15 23:43:21.009822: Video created successfully: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.mp4
+2024-06-15 23:43:27.112591: Video created successfully: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.mp4
+2024-06-15 23:43:30.127825: Video created successfully: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.mp4
+2024-06-15 23:43:31.612654: Video created successfully: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.mp4
+2024-06-15 23:43:36.690467: Video created successfully: video_output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.mp4
+2024-06-15 23:43:39.298151: Video created successfully: video_output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.mp4
+2024-06-15 23:43:40.975240: Video created successfully: video_output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.mp4
+2024-06-15 23:43:42.090563: Video created successfully: video_output/2024-06-15/소설_여행_경험/word_list_여행_경험.mp4
+2024-06-15 23:43:50.394279: Video created successfully: video_output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.mp4
+2024-06-15 23:43:52.359656: Video created successfully: video_output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.mp4
+2024-06-15 23:43:56.589302: Video created successfully: video_output/2024-06-15/소설_행복/중급_The_Joyful_Journey.mp4
+2024-06-15 23:43:57.744162: Video created successfully: video_output/2024-06-15/소설_행복/word_list_행복.mp4
+2024-06-15 23:45:48.717054: Video already exists: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/word_list_최근_글로벌_경제_동향.mp4
+2024-06-15 23:45:48.801639: Video already exists: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/고급_Navigating_the_Complexities_of_the_Current_Global_Economy.mp4
+2024-06-15 23:45:48.884146: Video already exists: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/중급_Current_Trends_in_the_Global_Economy.mp4
+2024-06-15 23:45:48.965452: Video already exists: video_output/2024-06-15/뉴스_기사_최근_글로벌_경제_동향/초급_Global_Economy_Today.mp4
+2024-06-15 23:45:49.044299: Video already exists: video_output/2024-06-15/소설_여행_경험/고급_The_Journey_of_a_Lifetime.mp4
+2024-06-15 23:45:49.125701: Video already exists: video_output/2024-06-15/소설_여행_경험/중급_An_Unforgettable_Journey.mp4
+2024-06-15 23:45:49.207989: Video already exists: video_output/2024-06-15/소설_여행_경험/초급_Samantha's_Trip.mp4
+2024-06-15 23:45:49.291299: Video already exists: video_output/2024-06-15/소설_여행_경험/word_list_여행_경험.mp4
+2024-06-15 23:45:49.391874: Video already exists: video_output/2024-06-15/소설_행복/고급_The_Pursuit_of_Happiness.mp4
+2024-06-15 23:45:49.475068: Video already exists: video_output/2024-06-15/소설_행복/초급_Anna's_Happy_Day.mp4
+2024-06-15 23:45:49.558499: Video already exists: video_output/2024-06-15/소설_행복/중급_The_Joyful_Journey.mp4
+2024-06-15 23:45:49.643043: Video already exists: video_output/2024-06-15/소설_행복/word_list_행복.mp4

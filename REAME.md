@@ -5,7 +5,7 @@
 
 ## 입력 형식
 
-```markdown
+"""
 ### 뉴스 기사: 최근 글로벌 경제 동향: 초급
 
 **Title: Global Economy Today**
@@ -57,7 +57,27 @@ In conclusion, while there are clear signs of recovery and growth in the global 
 | disparities         | 격차, 차이                           | The recovery is marked by stark disparities between economies. |
 | protracted          | 오래 끄는, 지연된                    | Developing nations are facing a more protracted recovery period. |
 
+"""
+
+### 사용방법
+
+1. 입력 형식에 맞는 text 파일 생성
+2. 생성된 txt 파일을 source에 이동
+3. 아래의 순서로 코드 실행
+
+```bash
+# 파일 실행
+python main.py
+
 ```
+
+
+
+
+
+
+
+
 
 - main_01.py
     - 위와 같은 형태에서 ###을 파일명(초급_제목)으로 사용
@@ -80,4 +100,17 @@ In conclusion, while there are clear signs of recovery and growth in the global 
 - main_07.py
     - 단어장 생성 추가, 단어는 1초 간격
 
-    
+- main_08.py
+    - 백업
+
+- main_09.py
+    - 음성 폴더안의 파일들을 읽어. image1.png와 결합해 동영상 파일 생성
+
+- main_10.py
+    - 동영상 파일 중복 생성 방지
+
+- main_11.py
+    - 동영상 생성시 로그 기록 추가
+
+- main_12.py
+    - main_08.py에 로그 기능 추가
