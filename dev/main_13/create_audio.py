@@ -1,13 +1,8 @@
-# create_audio.py
 import os
 import shutil
 from gtts import gTTS
 from datetime import datetime
 from pydub import AudioSegment
-
-def log_message(log_file, message):
-    with open(log_file, "a", encoding="utf-8") as log:
-        log.write(f"{datetime.now()}: {message}\n")
 
 def parse_input(text):
     articles = {}
@@ -39,6 +34,10 @@ def parse_input(text):
         articles[(current_topic_level, current_title)] = "\n".join(current_content).strip()
     
     return articles, word_list.strip()
+
+def log_message(log_file, message):
+    with open(log_file, "a", encoding="utf-8") as log:
+        log.write(f"{datetime.now()}: {message}\n")
 
 def save_articles(articles, word_list):
     current_date = datetime.now().strftime("%Y-%m-%d")
@@ -125,7 +124,8 @@ def list_files_in_source():
     files = [f for f in os.listdir(source_dir) if os.path.isfile(os.path.join(source_dir, f))]
     return files
 
-def main():
+# Example usage
+if __name__ == "__main__":
     move_files_to_source()
     
     while True:
@@ -164,6 +164,3 @@ def main():
             if user_input:
                 articles, word_list = parse_input(user_input)
                 save_articles(articles, word_list)
-
-if __name__ == "__main__":
-    main()
