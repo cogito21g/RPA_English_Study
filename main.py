@@ -23,13 +23,15 @@ def save_articles(articles):
         
         # Save text file
         text_file_path = os.path.join(text_dir, f"{file_name}.txt")
-        with open(text_file_path, "w", encoding="utf-8") as file:
-            file.write(text.strip())
+        if not os.path.exists(text_file_path):
+            with open(text_file_path, "w", encoding="utf-8") as file:
+                file.write(text.strip())
         
         # Save audio file
-        tts = gTTS(text=text.strip(), lang='en')
         audio_file_path = os.path.join(audio_dir, f"{file_name}.mp3")
-        tts.save(audio_file_path)
+        if not os.path.exists(audio_file_path):
+            tts = gTTS(text=text.strip(), lang='en')
+            tts.save(audio_file_path)
 
         print(f"Processed {idx}/{total_articles}: {title}")
 
