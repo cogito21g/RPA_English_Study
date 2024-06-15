@@ -1,11 +1,68 @@
-# RPA English Study
+import os
+from gtts import gTTS
+from datetime import datetime
 
-## Introduction
-영어 스크립트 지문을 텍스트 파일과 오디오 파일로 자동 변환하는 프로그램입니다.
+def parse_input(text):
+    articles = {}
+    lines = text.strip().split("\n")
+    current_level = None
+    current_content = []
+    for line in lines:
+        if line.startswith("### "):
+            if current_level:
+                articles[current_level] = "\n".join(current_content).strip()
+                current_content = []
+            current_level = line.replace("### ", "").strip()
+        elif line.startswith("**Title: "):
+            continue
+        elif line.startswith("```text"):
+            continue
+        elif line.startswith("```"):
+            continue
+        else:
+            current_content.append(line)
+    
+    if current_level:
+        articles[current_level] = "\n".join(current_content).strip()
+    
+    return articles
 
-## 입력 형식
+def save_articles(articles):
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    
+    for idx, (topic_level, text) in enumerate(articles.items(), start=1):
+        # Split topic and level correctly even if the topic contains ": "
+        split_topic_level = topic_level.split(": ")
+        if len(split_topic_level) == 3:
+            category, topic, level = split_topic_level
+            base_dir = os.path.join("output", current_date, f"{category}_{topic}".replace(' ', '_').replace('-', '_'))
+        else:
+            print(f"Error: Unexpected format in topic_level: {topic_level}")
+            continue
 
-```markdown
+        os.makedirs(base_dir, exist_ok=True)
+        
+        file_name = f"{level}_{topic.replace(' ', '_').replace('-', '_')}"
+        
+        # Save text file
+        text_file_path = os.path.join(base_dir, f"{file_name}.txt")
+        if not os.path.exists(text_file_path):
+            with open(text_file_path, "w", encoding="utf-8") as file:
+                file.write(text.strip())
+        
+        # Save audio file
+        audio_file_path = os.path.join(base_dir, f"{file_name}.mp3")
+        if not os.path.exists(audio_file_path):
+            tts = gTTS(text=text.strip(), lang='en')
+            tts.save(audio_file_path)
+
+        print(f"Processed {idx}/{len(articles)}: {topic_level}")
+
+    print("All files have been successfully created and saved.")
+
+# Example usage with user input
+if __name__ == "__main__":
+    user_input = """
 ### 뉴스 기사: 최근 글로벌 경제 동향: 초급
 
 **Title: Global Economy Today**
@@ -57,13 +114,8 @@ In conclusion, while there are clear signs of recovery and growth in the global 
 | disparities         | 격차, 차이                           | The recovery is marked by stark disparities between economies. |
 | protracted          | 오래 끄는, 지연된                    | Developing nations are facing a more protracted recovery period. |
 
-```
+다른 지문 종류나 주제를 원하시면 말씀해주세요!
 
-- main_01.py
-    - 위와 같은 형태에서 ###을 파일명(초급_제목)으로 사용
-
-- main_02.py
-    - Title을 기준으로 사용
-
-- main_03.py
-    - txt 파일을 읽어오도록 처리
+"""
+    articles = parse_input(user_input)
+    save_articles(articles)

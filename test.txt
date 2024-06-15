@@ -1,11 +1,3 @@
-# RPA English Study
-
-## Introduction
-영어 스크립트 지문을 텍스트 파일과 오디오 파일로 자동 변환하는 프로그램입니다.
-
-## 입력 형식
-
-```markdown
 ### 뉴스 기사: 최근 글로벌 경제 동향: 초급
 
 **Title: Global Economy Today**
@@ -57,13 +49,4 @@ In conclusion, while there are clear signs of recovery and growth in the global 
 | disparities         | 격차, 차이                           | The recovery is marked by stark disparities between economies. |
 | protracted          | 오래 끄는, 지연된                    | Developing nations are facing a more protracted recovery period. |
 
-```
-
-- main_01.py
-    - 위와 같은 형태에서 ###을 파일명(초급_제목)으로 사용
-
-- main_02.py
-    - Title을 기준으로 사용
-
-- main_03.py
-    - txt 파일을 읽어오도록 처리
+다른 지문 종류나 주제를 원하시면 말씀해주세요!
